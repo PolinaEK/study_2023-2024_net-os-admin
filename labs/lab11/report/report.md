@@ -244,9 +244,9 @@ X11Forwarding yes
 2. После сохранения изменения в конфигурационном файле перезапустите sshd.
 3. Попробуйте с клиента удалённо подключиться к серверу и запустить графическое
 приложение, например firefox (вместо user используйте ваш логин):
-ssh -YC user@server.user.net firefox(рис. [-@fig:006])
+ssh -YC user@server.user.net firefox(рис. [-@fig:007])
 
-![Запуск графическое приложения firefox](image/6.png){#fig:006 width=70%}
+![Запуск графическое приложения firefox](image/7.png){#fig:007 width=70%}
 
 Внесение изменений в настройки внутреннего
 окружения виртуальной машины
@@ -259,9 +259,9 @@ cd /vagrant/provision/server
 mkdir -p /vagrant/provision/server/ssh/etc/ssh
 cp -R /etc/ssh/sshd_config /vagrant/provision/server/ssh/etc/ssh/
 2. В каталоге /vagrant/provision/server создайте исполняемый файл ssh.sh.
-(рис. [-@fig:006])
+(рис. [-@fig:008])
 
-![Содержимое файла ssh.sh](image/6.png){#fig:006 width=70%}
+![Содержимое файла ssh.sh](image/8.png){#fig:008 width=70%}
 
 3. Для отработки созданного скрипта во время загрузки виртуальной машины server
 в конфигурационном файле Vagrantfile необходимо добавить в разделе конфигу-
